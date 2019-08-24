@@ -1,0 +1,99 @@
+///////////////////////////////////////////////////////////////////////
+// HEADING PIC //
+
+.header__gal-img {
+    
+//    grid-column: col-start 3 / col-end 6;
+//    
+//    background-image: url(../img/photo_12.jpg);
+//    background-size: cover;
+//    background-position: center;
+//    background-repeat: no-repeat;
+//    width: 100%;
+//    height: auto;
+//    
+//    display: gird;
+//    grid-template-columns: repeat(6, 1fr);
+//    grid-template-rows: repeat(6, 1fr);
+//    
+//    position: relative;
+//    bottom: 30rem;
+//    z-index: -1;
+// 
+//    box-shadow: 5rem 5rem 5rem 6rem inset $color-black;
+    
+    
+}
+
+
+///////////////////////////////////////////////////////////////////////
+// CONTENT //
+
+.gal-1__content {
+    grid-column: center-start / center-end;
+    
+    text-align: center;
+    padding: 0 20%;
+    
+    .b-line {
+        margin: auto 35rem;
+        margin-bottom: 1.8rem;
+    }
+}
+
+
+
+///////////////////////////////////////////////////////////////////////
+// ROWS //
+
+.gal-1__left-row-1,
+.gal-1__right-row-1,
+.gal-1__left-row-2,
+.gal-1__right-row-2,
+.gal-1__left-row-3,
+.gal-1__right-row-3,
+.gal-1__left-row-4,
+.gal-1__right-row-4,
+.gal-1__left-row-5,
+.gal-1__right-row-5 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 95%;
+    height: auto;
+    margin-bottom: 10rem;
+    margin-left: 2rem;
+}
+
+.gal-1__left-row-1,
+.gal-1__left-row-2,
+.gal-1__left-row-3,
+.gal-1__left-row-4,
+.gal-1__left-row-5 {
+    grid-column: center-start / col-end 4;
+}
+
+.gal-1__right-row-1,
+.gal-1__right-row-2,
+.gal-1__right-row-3,
+.gal-1__right-row-4,
+.gal-1__right-row-5 {
+    grid-column: col-start 5 / center-end;
+}
+
+
+.gal-1__left-row-1 {
+    background-image: url(../img/photo_3.jpg);   
+}
+.gal-1__right-row-1 {
+    background-image: url(../img/photo_5.jpg);
+}
+
+.gal-1__left-row-2 {
+    background-image: url(../img/photo_3.jpg);   
+}
+.gal-1__right-row-2 {
+    background-image: url(../img/photo_5.jpg);
+}
+
+

@@ -1,0 +1,144 @@
+@mixin footerLink {
+    font-size: 2.2rem;
+    text-decoration: none;
+    color: $color-white;
+    opacity: .6;
+}
+
+@mixin footerList {
+    margin-bottom: 2rem;
+    list-style: none;
+}
+
+
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+
+
+
+@mixin footer {
+    .footer__text {
+        grid-column: center-start / col-end 2;
+
+        p {
+            opacity: .6;
+        }
+    }
+
+    .footer__social {
+        grid-column: col-start 6;
+
+        li {
+            @include footerList;
+        }
+
+        a {
+            @include footerLink;
+        }
+    }
+
+    .footer__extra {
+        grid-column: col-start 8;
+
+        li {
+            @include footerList;
+        }
+
+        a {
+            @include footerLink;
+        }
+    }
+
+    .copyright {
+        opacity: .6;
+        margin-top: 25rem;
+        font-size: 1.7rem;
+    }
+}
+
+@mixin navbar {
+    .navbar {
+
+        grid-column: center-start / center-end;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__logo {
+            font-family: $font-heading;
+            letter-spacing: .4rem;
+            font-size: 6rem;
+            font-weight: bold;
+            color: $color-white;
+            line-height: 8rem;
+
+            a {
+                text-decoration: none;
+                color: $color-white;
+                transition: .3s;
+
+                &:hover {
+                    opacity: .7;
+                }
+            }
+        }
+
+        &__links {
+            font-size: 2.7rem;
+            display: flex;
+
+            a {
+                margin-right: 5rem;
+                text-decoration: none;
+                color: $color-white;
+            }
+        }
+
+    }
+}
+
+
+/////////////////////////////////////////////////
+
+// MEDIA QUERY MANAGER //
+
+/*
+0 - 576px:      Phone
+576 - 768px:    Tablet portrait
+768 - 1024px:    Tablet landscape
+1024 - 1200px :  Big desktop
+
+$breakpoint arguement choices:
+- phone (small)
+- tab-port (medium)
+- tab-land (large)
+- big-desktop (largest)
+
+ORDER: Base + > page layout > components
+
+1em = 16px
+*/
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == small {
+        @media only screen and (max-width: 36em) { @content };    //576px
+    }
+    @if $breakpoint == medium {
+        @media only screen and (max-width: 48em) { @content };     //768px
+    }
+    @if $breakpoint == large {
+        @media only screen and (max-width: 64em) { @content };    //1024px
+    }
+    @if $breakpoint == largest {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+}
+
+

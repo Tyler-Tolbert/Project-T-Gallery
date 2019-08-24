@@ -1,0 +1,120 @@
+
+
+@include navbar;
+
+
+///////////////////////////////////////////////////////////////////////
+
+.section-1__content {
+    grid-column: center-start / col-end 4;
+    
+    
+    display: grid;
+    align-content: center;
+    justify-items: start;
+    padding-right: 5rem;
+}
+
+.section-1__picture {
+    grid-column: col-start 5 / center-end;
+    
+    background-image: url(../img/photo_2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    
+}
+
+.section-1 {
+    opacity: 0;
+}
+
+
+///////////////////////////////////////////////////////////////////////
+
+.section-2__content {
+    grid-column: col-start 5 / center-end;
+    
+    display: grid;
+    align-content: center;
+    justify-items: start;
+    padding-left: 5rem;
+}
+
+.section-2__picture {
+    grid-column: center-start / col-end 4;
+    
+    background-image: url(../img/photo_4.jpg);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+}
+
+.section-2 {
+    opacity: 0;
+}
+
+
+///////////////////////////////////////////////////////////////////////
+
+.section-3__content {
+    grid-column: center-start / col-end 4;
+    
+    
+    display: grid;
+    align-content: center;
+    justify-items: start;
+    padding-right: 5rem;
+}
+
+.section-3__picture {
+    grid-column: col-start 5 / center-end;
+    
+    background-image: url(../img/photo_10.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    
+}
+
+.section-3 {
+    opacity: 0;
+}
+
+
+///////////////////////////////////////////////////////////////////////
+
+.section-4__content {
+    grid-column: col-start 5 / center-end;
+    
+    display: grid;
+    align-content: center;
+    justify-items: start;
+    padding-left: 5rem;
+}
+
+.section-4__picture {
+    grid-column: center-start / col-end 4;
+    
+    background-image: url(../img/photo_11.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+}
+
+.section-4 {
+    opacity: 0;
+}
+
+
+
+
+

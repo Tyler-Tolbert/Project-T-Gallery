@@ -1,0 +1,138 @@
+%heading {
+    font-family: $font-display;
+    font-weight: 400;
+}
+
+.heading-1 {
+    @extend %heading; //it copys styles from %heading
+    font-size: 7rem;
+    color: $color-grey-light-1;
+    line-height: 1;
+    font-family: $font-heading;
+}
+
+.heading-2 {
+    @extend %heading;
+    font-size: 4rem;
+    font-style: italic;
+    line-height: 1;
+
+    &--light {
+        color: $color-grey-light-1;
+    }
+
+    &--dark {
+        color: $color-grey-dark-1;
+    }
+}
+
+.heading-3 {
+    @extend %heading;
+    font-size: 3rem;
+    font-weight: bold;
+    color: $color-white;
+    text-transform: uppercase;
+}
+
+.heading-4 {
+    @extend %heading;
+    font-size: 2.2rem;
+    color: $color-grey-light-2;
+    text-transform: uppercase;
+
+    &--light {
+        color: $color-grey-light-1;
+    }
+
+    &--dark {
+        color: $color-grey-dark-1;
+    }
+}
+
+.heading-5 {
+    @extend %heading;
+    font-size: 6rem;
+    color: $color-primary;
+}
+
+p {
+    font-size: 2.5rem;
+    color: $color-white;
+    line-height: 3.8rem;
+}
+
+////////////////////////////////////////////////////////////////////////
+
+.btn {
+    background-color: transparent;
+    color: #fff;
+    border: .3rem solid $color-white;
+    font-family: $font-display;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 2rem 4.5rem;
+    cursor: pointer;
+    transition: all .3s;
+    background-color: #222;
+    opacity: .8;
+
+    &:hover {
+        background-color: #333;
+        opacity: 1;
+    }
+
+    &:active {
+        transform: scale(1);
+    }
+}
+
+.b-line {
+    border-bottom: .4rem solid $color-white;
+    padding-right: 6rem;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+
+.underline {
+    display: inline;
+    position: relative;
+    overflow: hidden;
+}
+
+.underline:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    width: 0;
+    bottom: -5px;
+    background: #fff;
+    height: .8rem;
+    transition-property: width;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+.underline:hover:after,
+.underline:focus:after,
+.underline:active:after {
+    left: 0;
+    right: auto;
+    width: 100%;
+}
+
+.active {
+    border-bottom: .2rem solid $color-white;
+}
+
+////////////////////////////////////////////////////////////////////////
+
+.mb-sm { margin-bottom: 2rem };
+.mb-md { margin-bottom: 3rem };
+.mb-lg { margin-bottom: 4rem };
+.mb-xl { margin-bottom: 8rem };
+
+.mt-sm { margin-top: 4rem };
+.mt-md { margin-top: 6rem };
+.mt-lg { margin-top: 8rem };
+.mt-xl { margin-top: 22rem };

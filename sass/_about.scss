@@ -1,0 +1,88 @@
+
+@include navbar;
+
+
+///////////////////////////////////////////////////////////////////////
+// HEADER //
+
+.header {
+    
+    grid-column: center-start / center-end;
+    
+    .heading-about {
+        font-size: 9rem;
+        line-height: 10rem;
+        padding-top: 5rem;
+        padding-right: 10rem;
+    }
+    
+    .head {
+            opacity: 0;
+        }
+    
+}
+
+///////////////////////////////////////////////////////////////////////
+// SUMMARY //
+
+.summary__title {
+    
+    grid-column: center-start / col-end 4;
+    
+}
+
+.summary__content {
+    
+    grid-column: col-start 5 / center-end;
+    
+    p {
+        margin-bottom: 3rem;
+        opacity: .7;
+    }
+    
+}
+
+
+///////////////////////////////////////////////////////////////////////
+// DESIGN // 
+
+
+.design__title {
+    grid-column: center-start / col-end 4;
+    
+}
+
+.design__content {
+    grid-column: col-start 5 / center-end;
+    
+    p {
+        margin-bottom: 3rem;
+        opacity: .7;
+    }
+}
+
+
+///////////////////////////////////////////////////////////////////////
+// PICTURE // 
+
+.about__picture {
+    grid-column: full-start / full-end;
+    
+    background-image: url(../img/photo_9.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 80rem;
+    
+    display: gird;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+
+///////////////////////////////////////////////////////////////////////
+// FOOTER // 
+
+@include footer;
+
